@@ -62,4 +62,14 @@ public class KlubiInfoController {
         }
         return null;
     }
+
+    public void tagasi (ActionEvent event) throws IOException{
+        FXMLLoader Loader = new FXMLLoader(getClass().getResource("Klubivalik.fxml"));
+        Parent root = Loader.load();
+        KlubivalikController controller =  Loader.<KlubivalikController>getController();
+        Scene scene = new Scene(root);
+        Stage KlubivalikStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        KlubivalikStage.setScene(scene);
+        KlubivalikStage.show();
+    }
 }

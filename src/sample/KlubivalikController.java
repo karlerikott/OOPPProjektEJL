@@ -65,6 +65,14 @@ public class KlubivalikController {
         klubivalikStage.setScene(scene);
         klubivalikStage.show();
     }
-
+    public void tagasi (ActionEvent event) throws IOException{
+        FXMLLoader Loader = new FXMLLoader(getClass().getResource("Algus.fxml"));
+        Parent root = Loader.load();
+        AlgusController controller =  Loader.<AlgusController>getController();
+        Scene scene = new Scene(root);
+        Stage AlgusStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        AlgusStage.setScene(scene);
+        AlgusStage.show();
+    }
 
 }

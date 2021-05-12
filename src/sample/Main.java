@@ -16,6 +16,7 @@ import java.util.Scanner;
 public class Main extends Application {
     public static final Liiga premiumLiiga = new Liiga("Premium Liiga");
     public static List<Mängija> mängijad = new ArrayList<>();
+    public static List<Mängija> mängijadSalvestamiseks = new ArrayList<>();
 
     @Override
     public void start(Stage primaryStage) throws Exception{

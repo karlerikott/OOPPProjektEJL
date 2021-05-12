@@ -38,31 +38,33 @@ public class Liiga {
         return null;
     }
 
-    public static void väravalööjad(List<Mängija> mängijad) { //Peab sorteerima kõik premium liiga mängijad väravate põhjal ja väljastama top 10;
+    public static List<String> väravalööjad(List<Mängija> mängijad) { //Peab sorteerima kõik premium liiga mängijad väravate põhjal ja tagastama top 10;
         Collections.sort(mängijad, new Comparator<Mängija>() {
             @Override
             public int compare(Mängija nr1, Mängija nr2) {
                 return nr1.getVäravad() - nr2.getVäravad();
             }
         }.reversed());
-        System.out.println("TOP 10 kõige rohkem väravaid löönud mängijad: ");
+        List<String> top10 = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
             Mängija mängija = mängijad.get(i);
-            System.out.println(i + 1 + ". " + mängija.getNimi() + ", väravaid: " + mängija.getVäravad());
+            top10.add(i + 1 + ". " + mängija.getNimi() + ", väravaid: " + mängija.getVäravad());
         }
+        return top10;
     }
 
-    public static void jooksjad(List<Mängija> mängijad) { //Peab sorteerima kõik Premium liiga mängijad jooksudistantsi põhjal ja väljastama top10;
+    public static List<String> jooksjad(List<Mängija> mängijad) { //Peab sorteerima kõik Premium liiga mängijad jooksudistantsi põhjal ja tagastama top10;
         Collections.sort(mängijad, new Comparator<Mängija>() {
             @Override
             public int compare(Mängija nr1, Mängija nr2) {
                 return (int)nr1.getJooks() - (int)nr2.getJooks();
             }
         }.reversed());
-        System.out.println("TOP 10 kõige rohkem jooksnud mängijad (keskmiselt ühe mängu kohta): ");
+        List<String> top10 = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
             Mängija mängija = mängijad.get(i);
-            System.out.println(i + 1 + ". " + mängija.getNimi() + ", keskmiselt joostud km: " + mängija.getJooks());
+            top10.add(i + 1 + ". " + mängija.getNimi() + ", keskmiselt joostud km: " + Math.ceil(mängija.getJooks()*100.0)/100.0);
         }
+        return top10;
     }
 }

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.JooksjadController">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0">
+         <top>
+            <VBox alignment="CENTER" prefHeight="86.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Kõige rohkem jooksnud mängijad">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label text="(keskmiselt mängu kohta kilomeetrites)">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </top>
+         <bottom>
+            <VBox alignment="CENTER" prefHeight="76.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#tagasi" text="Tagasi">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </bottom>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="28.0" prefWidth="600.0">
+                     <children>
+                        <Label fx:id="top1" prefHeight="17.0" prefWidth="574.0" text="Label">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="28.0" prefWidth="600.0">
+                     <children>
+                        <Label fx:id="top2" prefHeight="17.0" prefWidth="574.0" text="Label">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="28.0" prefWidth="600.0">
+                     <children>
+                        <Label fx:id="top3" prefHeight="17.0" prefWidth="574.0" text="Label">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="28.0" prefWidth="600.0">
+                     <children>
+                        <Label fx:id="top4" prefHeight="17.0" prefWidth="574.0" text="Label">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="28.0" prefWidth="600.0">
+                     <children>
+                        <Label fx:id="top5" prefHeight="17.0" prefWidth="574.0" text="Label">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="28.0" prefWidth="600.0">
+                     <children>
+                        <Label fx:id="top6" prefHeight="17.0" prefWidth="574.0" text="Label">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="28.0" prefWidth="600.0">
+                     <children>
+                        <Label fx:id="top7" prefHeight="17.0" prefWidth="574.0" text="Label">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="28.0" prefWidth="600.0">
+                     <children>
+                        <Label fx:id="top8" prefHeight="17.0" prefWidth="574.0" text="Label">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="28.0" prefWidth="600.0">
+                     <children>
+                        <Label fx:id="top9" prefHeight="17.0" prefWidth="574.0" text="Label">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="28.0" prefWidth="600.0">
+                     <children>
+                        <Label fx:id="top10" prefHeight="17.0" prefWidth="574.0" text="Label">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

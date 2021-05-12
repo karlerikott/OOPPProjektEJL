@@ -123,6 +123,17 @@
                </children>
             </HBox>
          </center>
+         <bottom>
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#tagasi" text="Tagasi">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </bottom>
       </BorderPane>
    </children>
 </AnchorPane>
