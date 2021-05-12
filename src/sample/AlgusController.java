@@ -12,7 +12,12 @@ import java.io.IOException;
 
 public class AlgusController {
 
-    public void LiigaNupp(){
+    public void LiigaNupp(ActionEvent event) throws IOException{
+        Parent liigaParent = FXMLLoader.load(getClass().getResource("Liigavalik.fxml"));
+        Scene liigavalik = new Scene(liigaParent);
+        Stage liigavalikStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        liigavalikStage.setScene(liigavalik);
+        liigavalikStage.show();
         System.out.println("Vajutati Liiga");
     }
 
@@ -22,10 +27,6 @@ public class AlgusController {
         Stage klubivalikStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         klubivalikStage.setScene(klubivalik);
         klubivalikStage.show();
-    }
-
-    public void MängijaNupp(){
-        System.out.println("Vajutati Mängija");
     }
 
 }
